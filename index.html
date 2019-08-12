@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="shop.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Shopping List</title>
+</head>
+
+<body>
+	<div class="col-12 center">
+		<h1>Shopping List</h1>
+	</div>
+	<div class="col-12 center">
+		<div class="col-12" style="margin-bottom: 10px;">Enter Item
+			<input class="textArea" type="string" value="" maxlength=10>
+
+		</div>
+		<div class="col-12">
+			Enter Price
+			<input type="number" name="totalPrice" class="totalPrice" value="">
+			<button class="button-primary addBtn" on type="button" name="button">Add</button>
+		</div>
+		<div class="Error"></div>
+	</div>
+	<div class="col-12 center">
+		<strong>Shop List:</strong>
+		<ul id="shopList" class="center">
+
+		</ul>
+	</div>
+	<div class="col- 12 center">
+		<strong>Total:</strong>
+		<div class="totalShop"></div>
+	</div>
+	</div>
+	<div class="col-12 center">
+		Enter budget amount<input type="number" name="totalUpdate" class="totalUpdate" value="" style="margin-left:5px">
+		<button class="button-primary updateBtn" on type="button" name="button">Set Budget</button>
+	</div>
+</body>
+<script src="shopping-list.js" charset="utf-8"></script>
+<script src="shopping-list-dom.js" charset="utf-8"></script>
+<script src="/test/shopping-list.test.js" charset="utf-8"></script>
+
+</html>
